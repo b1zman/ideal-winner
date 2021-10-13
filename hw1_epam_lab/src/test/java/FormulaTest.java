@@ -1,14 +1,12 @@
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
-public class FormulaTest {
+class FormulaTest {
 
     @Test
-   public void getResultG() {
-        Formula formula = new Formula(1,1,1,1);
-        double result = formula.getResultG();
-        assertEquals(formula.getResultG(),19.74,2);
-        }
+    public void getResultG_ShouldReturnRightResult_WhenDataValid() {
+        double result = Formula.getResultG(1, 1, 1, 1);
+        assertEquals(result, 19.74, 2);
     }
+}
