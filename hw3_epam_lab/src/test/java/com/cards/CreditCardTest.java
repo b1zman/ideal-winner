@@ -1,18 +1,15 @@
 package com.cards;
 
-import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
-
 class CreditCardTest {
 
     @Test
     void getHolderName_ShowName() {
         CreditCard card = new CreditCard("Bob");
         String name = card.getHolderName();
-        Assert.assertEquals(name,"Bob");
+        assertEquals(name,"Bob");
 
     }
 

@@ -1,5 +1,7 @@
 package com.cards;
 
+import java.rmi.UnexpectedException;
+
 public abstract class Card {
     private double accountBalance;
     private String holderName;
@@ -34,4 +36,8 @@ public abstract class Card {
     public double convertBalance(double rate) {
         return accountBalance * rate;
     }
+
+    {
+    }
+
 }

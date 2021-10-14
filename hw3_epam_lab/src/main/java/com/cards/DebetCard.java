@@ -1,7 +1,7 @@
 package com.cards;
 
 public class DebetCard extends Card {
-    public static double accountBalance;
+    private double accountBalance;
 
     public DebetCard(double accountBalance, String holderName) {
         super(holderName);
@@ -15,13 +15,13 @@ public class DebetCard extends Card {
 
     @Override
     public double addBalance(double money) {
-        return super.addBalance(money);
+        return accountBalance;
     }
 
     @Override
     public double withdrawBalance(double money) {
         if (accountBalance < money) {
-            throw new NullPointerException("Недостаточно средств");
+            throw new NoMoneyException("Недостаточно средств");
         }
         accountBalance = accountBalance - money;
         return accountBalance;
