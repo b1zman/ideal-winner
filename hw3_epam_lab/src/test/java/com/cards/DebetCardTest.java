@@ -40,6 +40,7 @@ class DebetCardTest {
     public void withBalance_Exception_WhenWithdrawMuchMoney() {
         final DebetCard expectEx = new DebetCard(1, "Bob");
         assertThatThrownBy(() -> expectEx.withdrawBalance(10)).isInstanceOf(NoMoneyException.class);
+
     }
 
 

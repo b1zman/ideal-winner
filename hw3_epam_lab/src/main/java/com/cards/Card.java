@@ -1,10 +1,8 @@
 package com.cards;
 
-import java.rmi.UnexpectedException;
-
 public abstract class Card {
-    private double accountBalance;
-    private String holderName;
+    protected double accountBalance;
+    private final String holderName;
 
     public Card(double accountBalance, String holderName) {
         this.accountBalance = accountBalance;
