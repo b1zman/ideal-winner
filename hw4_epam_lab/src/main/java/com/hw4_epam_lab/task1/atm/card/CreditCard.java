@@ -1,4 +1,4 @@
-package com.atw.card;
+package com.hw4_epam_lab.task1.atm.card;
 
 public class CreditCard extends Card {
     public CreditCard(double accountBalance, String holderName) {

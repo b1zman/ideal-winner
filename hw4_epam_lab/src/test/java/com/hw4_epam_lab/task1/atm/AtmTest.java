@@ -1,12 +1,13 @@
-package com.atw;
+package com.hw4_epam_lab.task1.atm;
 
-import com.atw.card.Card;
-import com.atw.card.DebetCard;
+import com.hw4_epam_lab.task1.atm.card.Card;
+import com.hw4_epam_lab.task1.atm.card.DebetCard;
+import com.hw4_epam_lab.task1.atm.card.NoMoneyException;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class AtwTest {
+class AtmTest {
 
     @Test
     void withdrawAtw_ShowNewBalanceCard_WhenWithdraw() {
@@ -40,4 +41,15 @@ class AtwTest {
         cardAtm.convertAtm(10);
         assertEquals(card.getAccountBalance(), 50, 0.00000001);
     }
+
+    @Test
+    void withdrawAtw_ShowException_WhenWithdrawSoMuch() {
+        Card card = new DebetCard(50, "Bob");
+        Atm cardAtm = new Atm(card);
+        cardAtm.withdrawAtm(80);
+        assertEquals(cardAtm.cardBalance(), no, "Недостаточно средств");
+        assertThatTrowBy()
+
+    }
+
 }

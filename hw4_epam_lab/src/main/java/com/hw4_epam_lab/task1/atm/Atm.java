@@ -1,6 +1,6 @@
-package com.atw;
+package com.hw4_epam_lab.task1.atm;
 
-import com.atw.card.Card;
+import com.hw4_epam_lab.task1.atm.card.Card;
 
 public class Atm {
     private Card card;
