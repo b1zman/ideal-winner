@@ -1,8 +1,13 @@
 package com.hw4_epam_lab.task1.atm.card;
 
-public class DebetCard extends Card {
-    public DebetCard(double accountBalance, String holderName) {
+public class DebitCard extends Card {
+
+    public DebitCard(double accountBalance, String holderName) {
         super(accountBalance, holderName);
+    }
+
+    public double getAccountBalance() {
+        return super.getAccountBalance();
     }
 
     public String getHolderName() {
@@ -20,10 +25,6 @@ public class DebetCard extends Card {
             super.accountBalance -= money;
             return super.getAccountBalance();
         }
-    }
-
-    public double getAccountBalance() {
-        return super.getAccountBalance();
     }
 
     public double convertBalance(double rate) {

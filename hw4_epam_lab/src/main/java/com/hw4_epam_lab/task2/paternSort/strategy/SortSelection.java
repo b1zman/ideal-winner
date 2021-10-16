@@ -2,8 +2,9 @@ package com.hw4_epam_lab.task2.paternSort.strategy;
 
 import com.hw4_epam_lab.task2.paternSort.Strategy;
 
-public class SortSelection extends Strategy {
-    public void Sort(int[] array) {
+public class SortSelection implements Strategy {
+    @Override
+    public int[] sort(int[] array) {
         System.out.println("SelectionSort");
         for (int i = 0; i < array.length - 1; i++) {
             int k = i;
@@ -16,5 +17,6 @@ public class SortSelection extends Strategy {
                 array[i] = temp;
             }
         }
+        return array;
     }
 }

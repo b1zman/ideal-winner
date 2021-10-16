@@ -2,8 +2,9 @@ package com.hw4_epam_lab.task2.paternSort.strategy;
 
 import com.hw4_epam_lab.task2.paternSort.Strategy;
 
-public class SortBubble extends Strategy {
-    public void Sort(int[] array) {
+public class SortBubble implements Strategy {
+    @Override
+    public int[] sort(int[] array) {
         System.out.println("BubbleSort");
         for (int i = 0; i < array.length; i++) {
             for (int j = array.length - 1; j > i; j--) {
@@ -14,5 +15,6 @@ public class SortBubble extends Strategy {
                 }
             }
         }
+        return array;
     }
 }

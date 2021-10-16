@@ -1,18 +1,18 @@
 package com.hw4_epam_lab.task2.paternSort;
 
-import com.hw4_epam_lab.task2.paternSort.strategy.SortSelection;
+import com.hw4_epam_lab.task2.paternSort.strategy.SortBubble;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class SortSelectionTest {
-    private static SortSelection sort;
+class SortBubbleTest {
+    private static SortBubble sort;
     private static SortingContext context;
 
     @BeforeAll
     public static void init() {
-        sort = new SortSelection();
+        sort = new SortBubble();
         context = new SortingContext(sort);
     }
 

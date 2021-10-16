@@ -36,8 +36,6 @@ public abstract class Card {
         return this.accountBalance;
     }
 
-    public void Exception(double money) {
-    }
 }
 
 
