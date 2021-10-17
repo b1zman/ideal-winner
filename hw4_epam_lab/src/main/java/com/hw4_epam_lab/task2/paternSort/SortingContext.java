@@ -7,8 +7,8 @@ public class SortingContext {
         this.strategy = strategy;
     }
 
-    public int[] Sort(int[] array) {
-        return this.strategy.sort(array);
+    public int[] sort(int[] array) {
+        return strategy.sortArray(array);
     }
 
 }

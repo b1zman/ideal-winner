@@ -23,7 +23,7 @@ class SortBubbleTest {
         int[] arrayNotSorted = new int[]{5, 4, 6, 1, 2, 3};
 
         //then
-        assertThat(context.Sort(arrayNotSorted))
+        assertThat(context.sort(arrayNotSorted))
                 .isEqualTo(arraySorted);
     }
 
@@ -34,7 +34,7 @@ class SortBubbleTest {
         int[] arrayNotSorted = new int[]{};
 
         //then
-        assertThat(context.Sort(arrayNotSorted))
+        assertThat(context.sort(arrayNotSorted))
                 .isEqualTo(arraySorted);
     }
 
@@ -45,7 +45,7 @@ class SortBubbleTest {
         int[] arrayNotSorted = new int[]{-1, -7, -2, -5};
 
         //then
-        assertThat(context.Sort(arrayNotSorted))
+        assertThat(context.sort(arrayNotSorted))
                 .isEqualTo(arraySorted);
     }
 

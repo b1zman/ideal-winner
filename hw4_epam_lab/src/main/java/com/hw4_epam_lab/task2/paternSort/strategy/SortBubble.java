@@ -4,7 +4,7 @@ import com.hw4_epam_lab.task2.paternSort.Strategy;
 
 public class SortBubble implements Strategy {
     @Override
-    public int[] sort(int[] array) {
+    public int[] sortArray(int[] array) {
         System.out.println("BubbleSort");
         for (int i = 0; i < array.length; i++) {
             for (int j = array.length - 1; j > i; j--) {

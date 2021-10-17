@@ -4,7 +4,7 @@ import com.hw4_epam_lab.task2.paternSort.Strategy;
 
 public class SortSelection implements Strategy {
     @Override
-    public int[] sort(int[] array) {
+    public int[] sortArray(int[] array) {
         System.out.println("SelectionSort");
         for (int i = 0; i < array.length - 1; i++) {
             int k = i;
